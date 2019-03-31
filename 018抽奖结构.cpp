@@ -2,6 +2,7 @@
 #include <string>
 #include <ctime>
 #include <conio.h>
+#include <windows.h>
 using namespace std;
 
 //方法一:time(NULL)
@@ -33,3 +34,18 @@ int main()
 
     return 0;
 }
+
+
+
+// long rand_number()	//毫秒级随机数
+// {
+// 	SYSTEMTIME sys;
+// 	GetLocatTime(&sys);
+// 	return sys.wMilliseconds;
+// }
+
+
+// unsigned long rand_number()	//纳秒级随机数
+// {
+// 	__asm RDTSC
+// }
