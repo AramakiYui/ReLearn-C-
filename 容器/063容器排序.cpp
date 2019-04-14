@@ -3,7 +3,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-const int n=10000;
+const int n=100000;
 
 bool sort1(int n1,int n2)
 {
@@ -13,15 +13,15 @@ bool sort1(int n1,int n2)
 int main()
 {
     vector <int> a;
-	int i,j,k,temp;
-	clock_t t1,t2;//¼ÆÊ±Àà
+	int i,temp;
+	clock_t t1,t2;//è®¡æ—¶ç±»
 	for(i=0;i<n;++i)
 		a.push_back(i);
 
 	t1=clock();
-	sort(a.begin(),a.end(),sort1);//¼Ó²ÎÊýsort1´Ó´óµ½Ð¡ÅÅÐò
+	sort(a.begin(),a.end(),sort1);//åŠ å‚æ•°sort1ä»Žå¤§åˆ°å°æŽ’åº
 	t2=clock();
-	cout<<t2-t1<<endl;
+	cout<<"time:"<<t2-t1<<endl;
 	for(i=0;i<10;++i)
 		cout<<a[i]<<endl;
 	return 0;
