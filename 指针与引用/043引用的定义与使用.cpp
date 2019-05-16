@@ -8,7 +8,7 @@ int main()
     int& p=a;   //a的别名为p
     cout<<p<<endl;
     p=b;
-    cout<<a<<endl;
+    cout<<p<<endl;
 
     return 0;
 }
